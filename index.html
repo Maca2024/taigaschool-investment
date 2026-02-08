@@ -1,0 +1,1213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taigaschool Eco Hotel | Investment Opportunity</title>
+    <meta name="description" content="Investment property valuation for Taigaschool Eco Hotel - NATO certified eco-hospitality asset in Ruka-Kuusamo, Finland">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1a3a2a;
+            --primary-light: #2d5a45;
+            --accent: #c9a227;
+            --accent-light: #e0b83a;
+            --dark: #0d1f16;
+            --light: #f8f9f7;
+            --text: #2c3e2d;
+            --text-light: #5a6b5c;
+            --white: #ffffff;
+            --shadow: 0 4px 20px rgba(0,0,0,0.08);
+            --shadow-lg: 0 10px 40px rgba(0,0,0,0.12);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: var(--text);
+            background: var(--light);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        /* Language Toggle */
+        .lang-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+            display: flex;
+            background: var(--white);
+            border-radius: 30px;
+            box-shadow: var(--shadow);
+            overflow: hidden;
+        }
+        
+        .lang-btn {
+            padding: 10px 20px;
+            border: none;
+            background: transparent;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            color: var(--text-light);
+        }
+        
+        .lang-btn.active {
+            background: var(--primary);
+            color: var(--white);
+        }
+        
+        .lang-btn:hover:not(.active) {
+            background: var(--light);
+            color: var(--primary);
+        }
+        
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            background: linear-gradient(135deg, var(--dark) 0%, var(--primary) 50%, var(--primary-light) 100%);
+            position: relative;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            opacity: 0.5;
+        }
+        
+        .hero-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 120px 40px 80px;
+            position: relative;
+            z-index: 1;
+            width: 100%;
+        }
+        
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(201, 162, 39, 0.2);
+            border: 1px solid var(--accent);
+            color: var(--accent-light);
+            padding: 10px 20px;
+            border-radius: 30px;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 30px;
+        }
+        
+        .hero-badge svg {
+            width: 16px;
+            height: 16px;
+        }
+        
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.5rem, 6vw, 5rem);
+            font-weight: 600;
+            color: var(--white);
+            line-height: 1.1;
+            margin-bottom: 20px;
+            max-width: 800px;
+        }
+        
+        .hero h1 span {
+            color: var(--accent);
+        }
+        
+        .hero-subtitle {
+            font-size: clamp(1.1rem, 2vw, 1.4rem);
+            color: rgba(255,255,255,0.8);
+            max-width: 600px;
+            margin-bottom: 40px;
+            font-weight: 300;
+        }
+        
+        .hero-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 30px;
+            margin-top: 60px;
+            max-width: 700px;
+        }
+        
+        .stat-item {
+            text-align: left;
+        }
+        
+        .stat-value {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--accent);
+            line-height: 1;
+        }
+        
+        .stat-label {
+            font-size: 0.85rem;
+            color: rgba(255,255,255,0.6);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 8px;
+        }
+        
+        /* Navigation */
+        .nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 999;
+            transition: all 0.3s ease;
+        }
+        
+        .nav.scrolled {
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: var(--shadow);
+            padding: 15px 40px;
+        }
+        
+        .nav.scrolled .logo {
+            color: var(--primary);
+        }
+        
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: var(--white);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .logo svg {
+            width: 28px;
+            height: 28px;
+        }
+        
+        /* Section Styles */
+        .section {
+            padding: 100px 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        .section-tag {
+            display: inline-block;
+            color: var(--accent);
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+        }
+        
+        .section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 4vw, 3rem);
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+        
+        .section-subtitle {
+            color: var(--text-light);
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        /* Cards Grid */
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        
+        .card {
+            background: var(--white);
+            border-radius: 16px;
+            padding: 35px;
+            box-shadow: var(--shadow);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .card-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        
+        .card-icon svg {
+            width: 24px;
+            height: 24px;
+            color: var(--white);
+        }
+        
+        .card h3 {
+            font-size: 1.2rem;
+            color: var(--primary);
+            margin-bottom: 12px;
+        }
+        
+        .card p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+        
+        /* Metrics Section */
+        .metrics-section {
+            background: var(--primary);
+            padding: 80px 40px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .metrics-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, var(--accent) 0%, transparent 70%);
+            opacity: 0.1;
+        }
+        
+        .metrics-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .metric-card {
+            background: rgba(255,255,255,0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 16px;
+            padding: 35px;
+            text-align: center;
+        }
+        
+        .metric-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--accent);
+            margin-bottom: 10px;
+        }
+        
+        .metric-label {
+            color: rgba(255,255,255,0.8);
+            font-size: 0.95rem;
+        }
+        
+        .metric-sublabel {
+            color: rgba(255,255,255,0.5);
+            font-size: 0.8rem;
+            margin-top: 5px;
+        }
+        
+        /* Valuation Table */
+        .valuation-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 40px;
+            background: var(--white);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+        
+        .valuation-table th,
+        .valuation-table td {
+            padding: 20px 25px;
+            text-align: left;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+        
+        .valuation-table th {
+            background: var(--primary);
+            color: var(--white);
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+        }
+        
+        .valuation-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .valuation-table tr:hover td {
+            background: rgba(26, 58, 42, 0.02);
+        }
+        
+        .value-highlight {
+            color: var(--primary);
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+        
+        /* Revenue Streams */
+        .revenue-bars {
+            margin-top: 50px;
+        }
+        
+        .revenue-item {
+            margin-bottom: 25px;
+        }
+        
+        .revenue-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            font-size: 0.95rem;
+        }
+        
+        .revenue-name {
+            font-weight: 600;
+            color: var(--primary);
+        }
+        
+        .revenue-percent {
+            color: var(--accent);
+            font-weight: 700;
+        }
+        
+        .revenue-bar-bg {
+            height: 12px;
+            background: rgba(0,0,0,0.05);
+            border-radius: 6px;
+            overflow: hidden;
+        }
+        
+        .revenue-bar-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--primary) 0%, var(--primary-light) 100%);
+            border-radius: 6px;
+            transition: width 1s ease;
+        }
+        
+        /* Certifications */
+        .cert-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 40px;
+        }
+        
+        .cert-badge {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            background: var(--white);
+            padding: 20px 30px;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+        
+        .cert-badge:hover {
+            border-color: var(--accent);
+            transform: translateY(-3px);
+        }
+        
+        .cert-badge svg {
+            width: 32px;
+            height: 32px;
+            color: var(--accent);
+        }
+        
+        .cert-text {
+            text-align: left;
+        }
+        
+        .cert-title {
+            font-weight: 600;
+            color: var(--primary);
+            font-size: 0.95rem;
+        }
+        
+        .cert-desc {
+            font-size: 0.8rem;
+            color: var(--text-light);
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--dark) 100%);
+            padding: 100px 40px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .cta-section h2 {
+            color: var(--white);
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 4vw, 3rem);
+            margin-bottom: 20px;
+        }
+        
+        .cta-section p {
+            color: rgba(255,255,255,0.8);
+            font-size: 1.1rem;
+            max-width: 500px;
+            margin: 0 auto 40px;
+        }
+        
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: var(--accent);
+            color: var(--dark);
+            padding: 18px 40px;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(201, 162, 39, 0.3);
+        }
+        
+        .cta-button:hover {
+            background: var(--accent-light);
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(201, 162, 39, 0.4);
+        }
+        
+        /* Footer */
+        .footer {
+            background: var(--dark);
+            padding: 40px;
+            text-align: center;
+        }
+        
+        .footer p {
+            color: rgba(255,255,255,0.5);
+            font-size: 0.85rem;
+        }
+        
+        .footer strong {
+            color: var(--accent);
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .section {
+                padding: 60px 20px;
+            }
+            
+            .hero-content {
+                padding: 100px 20px 60px;
+            }
+            
+            .hero-stats {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+            
+            .lang-toggle {
+                top: 10px;
+                right: 10px;
+            }
+            
+            .nav {
+                padding: 15px 20px;
+            }
+            
+            .valuation-table th,
+            .valuation-table td {
+                padding: 15px;
+                font-size: 0.9rem;
+            }
+        }
+        
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .animate-in {
+            animation: fadeInUp 0.6s ease forwards;
+        }
+        
+        /* Language content */
+        [data-lang] {
+            display: none;
+        }
+        
+        [data-lang].active {
+            display: block;
+        }
+        
+        span[data-lang],
+        strong[data-lang],
+        .stat-label[data-lang],
+        .metric-label[data-lang],
+        .metric-sublabel[data-lang] {
+            display: none;
+        }
+        
+        span[data-lang].active,
+        strong[data-lang].active,
+        .stat-label[data-lang].active,
+        .metric-label[data-lang].active,
+        .metric-sublabel[data-lang].active {
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Language Toggle -->
+    <div class="lang-toggle">
+        <button class="lang-btn active" data-set-lang="en">EN</button>
+        <button class="lang-btn" data-set-lang="fi">FI</button>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <a href="#" class="logo">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+            </svg>
+            Taigaschool
+        </a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/>
+                </svg>
+                <span data-lang="en">NATO NCAGE Certified Facility</span>
+                <span data-lang="fi">NATO NCAGE Sertifioitu Kohde</span>
+            </div>
+            
+            <h1>
+                <span data-lang="en" class="active">Investment Opportunity</span>
+                <span data-lang="fi">Sijoitusmahdollisuus</span>
+                <br>
+                <span>Taigaschool Eco Hotel</span>
+            </h1>
+            
+            <p class="hero-subtitle" data-lang="en" class="active">
+                A unique dual-use hospitality asset at Lake Kitka, Ruka-Kuusamo. 
+                NATO-certified. Green Key 5-Star. Ultra-lean operations with 50% OpEx ratio.
+            </p>
+            <p class="hero-subtitle" data-lang="fi">
+                Uniikki kaksoiskäyttöinen hotelliomaisuus Kitkajärvellä, Ruka-Kuusamossa. 
+                NATO-sertifioitu. Green Key 5-tähteä. Ultra-tehokas toiminta 50 % kulurakenteella.
+            </p>
+            
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-value">€2.87M</div>
+                    <div class="stat-label" data-lang="en" class="active">Current Value</div>
+                    <div class="stat-label" data-lang="fi">Nykyarvo</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">€5.69M</div>
+                    <div class="stat-label" data-lang="en" class="active">Stabilized (2028)</div>
+                    <div class="stat-label" data-lang="fi">Vakaa (2028)</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">50.1%</div>
+                    <div class="stat-label" data-lang="en" class="active">NOI Margin</div>
+                    <div class="stat-label" data-lang="fi">NOI-marginaali</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">1.77×</div>
+                    <div class="stat-label" data-lang="en" class="active">DSCR Year 1</div>
+                    <div class="stat-label" data-lang="fi">DSCR Vuosi 1</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Strategic Assets -->
+    <section class="section">
+        <div class="section-header">
+            <span class="section-tag" data-lang="en" class="active">Strategic Positioning</span>
+            <span class="section-tag" data-lang="fi">Strateginen Asema</span>
+            
+            <h2 data-lang="en" class="active">Unique Value Drivers</h2>
+            <h2 data-lang="fi">Ainutlaatuiset Arvontekijät</h2>
+            
+            <p class="section-subtitle" data-lang="en" class="active">
+                Six diversified revenue streams with institutional-grade income quality
+            </p>
+            <p class="section-subtitle" data-lang="fi">
+                Kuusi hajautettua tulonlähdettä institutionaalisen tason tulolaadulla
+            </p>
+        </div>
+        
+        <div class="cards-grid">
+            <div class="card">
+                <div class="card-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                    </svg>
+                </div>
+                <h3 data-lang="en" class="active">NATO NCAGE Certified</h3>
+                <h3 data-lang="fi">NATO NCAGE Sertifioitu</h3>
+                <p data-lang="en" class="active">
+                    Only private hospitality facility in Finland with NATO codification. 
+                    Access to 32 member states for training and recovery programs. Government-funded, 
+                    counter-cyclical revenue stream.
+                </p>
+                <p data-lang="fi">
+                    Ainoa yksityinen hotellikohde Suomessa NATO-koodauksella. 
+                    Pääsy 32 jäsenmaahan koulutus- ja recovery-ohjelmiin. Valtion rahoittama, 
+                    syklisen vastainen tulonlähde.
+                </p>
+            </div>
+            
+            <div class="card">
+                <div class="card-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/>
+                    </svg>
+                </div>
+                <h3 data-lang="en" class="active">Green Key 5-Star</h3>
+                <h3 data-lang="fi">Green Key 5-Tähteä</h3>
+                <p data-lang="en" class="active">
+                    Highest ecological certification. Wood chip heating at €7,700/year vs €25,000+ oil. 
+                    EU Taxonomy aligned. 18% consumer pricing premium potential.
+                </p>
+                <p data-lang="fi">
+                    Korkein ekologinen sertifiointi. Hakepuulämmitys 7 700 €/v vs 25 000+ € öljy. 
+                    EU Taxonomy -yhteensopiva. 18 % kuluttajahintapreemio.
+                </p>
+            </div>
+            
+            <div class="card">
+                <div class="card-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                    </svg>
+                </div>
+                <h3 data-lang="en" class="active">Ultra-Lean Operations</h3>
+                <h3 data-lang="fi">Ultra-Lean Toiminta</h3>
+                <p data-lang="en" class="active">
+                    1.5 FTE + Workaway program achieves 49.9% OpEx ratio vs 65-75% industry average. 
+                    Zero mortgage. Maximum financing flexibility for OP Bank.
+                </p>
+                <p data-lang="fi">
+                    1,5 FTE + Workaway-ohjelma saavuttaa 49,9 % kulurakenteen vs 65-75 % alan keskiarvo. 
+                    Nolla asuntolainaa. Maksimaalinen rahoitusjoustavuus OP-pankille.
+                </p>
+            </div>
+            
+            <div class="card">
+                <div class="card-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2.69l5.66 5.66a8 8 0 11-11.31 0z"/>
+                    </svg>
+                </div>
+                <h3 data-lang="en" class="active">Lake Kitka Location</h3>
+                <h3 data-lang="fi">Kitkajärven Sijainti</h3>
+                <p data-lang="en" class="active">
+                    Direct shoreline access to one of Europe's 10 purest freshwater lakes. 
+                    15km from Ruka, Finland's #1 ski destination. 3.2M annual visitor-days.
+                </p>
+                <p data-lang="fi">
+                    Suora rantaviiva yhdelle Euroopan 10 puhtaimmalle makean veden järvelle. 
+                    15 km Rukalta, Suomen #1 hiihtokohde. 3,2 milj. vuosittaista kävijäpäivää.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Metrics -->
+    <section class="metrics-section">
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <div class="metric-number">€487K</div>
+                <div class="metric-label" data-lang="en" class="active">Gross Revenue Y1</div>
+                <div class="metric-label" data-lang="fi">Bruttotulo V1</div>
+                <div class="metric-sublabel" data-lang="en" class="active">€733K by Year 3</div>
+                <div class="metric-sublabel" data-lang="fi">€733K vuoteen 3</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-number">65%</div>
+                <div class="metric-label" data-lang="en" class="active">Institutional Revenue</div>
+                <div class="metric-label" data-lang="fi">Institutionaalinen Tulo</div>
+                <div class="metric-sublabel" data-lang="en" class="active">NATO + Retreats</div>
+                <div class="metric-sublabel" data-lang="fi">NATO + Retreatsit</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-number">7</div>
+                <div class="metric-label" data-lang="en" class="active">Hotel Units</div>
+                <div class="metric-label" data-lang="fi">Hotelliyksikköä</div>
+                <div class="metric-sublabel" data-lang="en" class="active">+ 1 Lakeside Cabin</div>
+                <div class="metric-sublabel" data-lang="fi">+ 1 Rantamökki</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-number">10</div>
+                <div class="metric-label" data-lang="en" class="active">Camper Pitches</div>
+                <div class="metric-label" data-lang="fi">Asuntoautopaikkaa</div>
+                <div class="metric-sublabel" data-lang="en" class="active">Luxury serviced</div>
+                <div class="metric-sublabel" data-lang="fi">Luxus-palveluilla</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Revenue Streams -->
+    <section class="section">
+        <div class="section-header">
+            <span class="section-tag" data-lang="en" class="active">Revenue Architecture</span>
+            <span class="section-tag" data-lang="fi">Tulorakenne</span>
+            
+            <h2 data-lang="en" class="active">Diversified Income Streams</h2>
+            <h2 data-lang="fi">Hajautetut Tulonlähteet</h2>
+            
+            <p class="section-subtitle" data-lang="en" class="active">
+                Six revenue streams reduce seasonality risk and provide stable cash flows
+            </p>
+            <p class="section-subtitle" data-lang="fi">
+                Kuusi tulonlähdettä vähentävät kausivaihteluriskiä ja tarjoavat vakaat kassavirrat
+            </p>
+        </div>
+        
+        <div class="revenue-bars">
+            <div class="revenue-item">
+                <div class="revenue-header">
+                    <span class="revenue-name" data-lang="en" class="active">Leadership & Nature Retreats</span>
+                    <span class="revenue-name" data-lang="fi">Johtajuus- & Luontoretraitsit</span>
+                    <span class="revenue-percent">45.5%</span>
+                </div>
+                <div class="revenue-bar-bg">
+                    <div class="revenue-bar-fill" style="width: 45.5%"></div>
+                </div>
+            </div>
+            <div class="revenue-item">
+                <div class="revenue-header">
+                    <span class="revenue-name" data-lang="en" class="active">Boutique Hotel (7 units)</span>
+                    <span class="revenue-name" data-lang="fi">Boutique-hotelli (7 yks.)</span>
+                    <span class="revenue-percent">24.2%</span>
+                </div>
+                <div class="revenue-bar-bg">
+                    <div class="revenue-bar-fill" style="width: 24.2%"></div>
+                </div>
+            </div>
+            <div class="revenue-item">
+                <div class="revenue-header">
+                    <span class="revenue-name" data-lang="en" class="active">NATO Training & Recovery</span>
+                    <span class="revenue-name" data-lang="fi">NATO Koulutus & Recovery</span>
+                    <span class="revenue-percent">19.7%</span>
+                </div>
+                <div class="revenue-bar-bg">
+                    <div class="revenue-bar-fill" style="width: 19.7%"></div>
+                </div>
+            </div>
+            <div class="revenue-item">
+                <div class="revenue-header">
+                    <span class="revenue-name" data-lang="en" class="active">Luxury Camper Park</span>
+                    <span class="revenue-name" data-lang="fi">Luksus Asuntoautopuisto</span>
+                    <span class="revenue-percent">6.2%</span>
+                </div>
+                <div class="revenue-bar-bg">
+                    <div class="revenue-bar-fill" style="width: 6.2%"></div>
+                </div>
+            </div>
+            <div class="revenue-item">
+                <div class="revenue-header">
+                    <span class="revenue-name" data-lang="en" class="active">Lakeside Cabin</span>
+                    <span class="revenue-name" data-lang="fi">Rantamökki</span>
+                    <span class="revenue-percent">4.3%</span>
+                </div>
+                <div class="revenue-bar-bg">
+                    <div class="revenue-bar-fill" style="width: 4.3%"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Valuation -->
+    <section class="section" style="background: rgba(26,58,42,0.03);">
+        <div class="section-header">
+            <span class="section-tag" data-lang="en" class="active">Valuation</span>
+            <span class="section-tag" data-lang="fi">Arviointi</span>
+            
+            <h2 data-lang="en" class="active">Newsec Valuation Summary</h2>
+            <h2 data-lang="fi">Newsec Arviointiyhteenveto</h2>
+            
+            <p class="section-subtitle" data-lang="en" class="active">
+                AKA-certified income approach with institutional-grade risk assessment
+            </p>
+            <p class="section-subtitle" data-lang="fi">
+                AKA-sertifioitu tuottoarvio institutionaalisen tason riskiarvioinnilla
+            </p>
+        </div>
+        
+        <table class="valuation-table">
+            <thead>
+                <tr>
+                    <th data-lang="en" class="active">Valuation Method</th>
+                    <th data-lang="fi">Arviointimenetelmä</th>
+                    <th data-lang="en" class="active">Assumption</th>
+                    <th data-lang="fi">Oletus</th>
+                    <th data-lang="en" class="active">Value</th>
+                    <th data-lang="fi">Arvo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-lang="en" class="active">Direct Capitalization (Y1)</td>
+                    <td data-lang="fi">Suora kapitalisointi (V1)</td>
+                    <td>8.5% cap rate</td>
+                    <td class="value-highlight">€2,870,000</td>
+                    <td data-lang="en" class="active">Current Value</td>
+                    <td data-lang="fi">Nykyarvo</td>
+                </tr>
+                <tr>
+                    <td data-lang="en" class="active">Direct Capitalization (Y3)</td>
+                    <td data-lang="fi">Suora kapitalisointi (V3)</td>
+                    <td>8.0% cap rate</td>
+                    <td class="value-highlight">€5,687,000</td>
+                    <td data-lang="en" class="active">Stabilized</td>
+                    <td data-lang="fi">Vakaa</td>
+                </tr>
+                <tr>
+                    <td data-lang="en" class="active">10-Year DCF</td>
+                    <td data-lang="fi">10-vuotinen DCF</td>
+                    <td>9.5% discount</td>
+                    <td class="value-highlight">€5,917,000</td>
+                    <td data-lang="en" class="active">Fair Value</td>
+                    <td data-lang="fi">Käypä arvo</td>
+                </tr>
+                <tr>
+                    <td data-lang="en" class="active">Market Comparison</td>
+                    <td data-lang="fi">MarkkinavVertailu</td>
+                    <td>€300K/unit</td>
+                    <td class="value-highlight">€2,600,000 – €3,500,000</td>
+                    <td data-lang="en" class="active">Cross-check</td>
+                    <td data-lang="fi">Ristitarkistus</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div style="margin-top: 40px; padding: 30px; background: var(--primary); border-radius: 16px; color: var(--white);">
+            <h3 style="font-family: 'Playfair Display', serif; font-size: 1.5rem; margin-bottom: 15px; color: var(--accent);">
+                <span data-lang="en" class="active">Recommended Valuation Range</span>
+                <span data-lang="fi">Suositeltu Arvoväli</span>
+            </h3>
+            <p style="font-size: 1.1rem; margin-bottom: 20px;">
+                <span data-lang="en" class="active">Current (2026):</span>
+                <span data-lang="fi">Nykyinen (2026):</span>
+                <strong style="color: var(--accent); font-size: 1.3rem;">€2,800,000 – €3,500,000</strong>
+            </p>
+            <p style="font-size: 1.1rem;">
+                <span data-lang="en" class="active">Stabilized (2028):</span>
+                <span data-lang="fi">Vakaa (2028):</span>
+                <strong style="color: var(--accent); font-size: 1.3rem;">€5,350,000 – €5,700,000</strong>
+            </p>
+        </div>
+    </section>
+
+    <!-- Financing -->
+    <section class="section">
+        <div class="section-header">
+            <span class="section-tag" data-lang="en" class="active">Financing</span>
+            <span class="section-tag" data-lang="fi">Rahoitus</span>
+            
+            <h2 data-lang="en" class="active">OP Bank Financing Assessment</h2>
+            <h2 data-lang="fi">OP-Pankin Rahoitusarviointi</h2>
+            
+            <p class="section-subtitle" data-lang="en" class="active">
+                Zero encumbrance status provides maximum financing flexibility
+            </p>
+            <p class="section-subtitle" data-lang="fi">
+                Nolla velkatakuun tila tarjoaa maksimaalisen rahoitusjoustavuuden
+            </p>
+        </div>
+        
+        <div class="cards-grid">
+            <div class="card">
+                <div class="card-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/>
+                    </svg>
+                </div>
+                <h3 data-lang="en" class="active">60% LTV Recommended</h3>
+                <h3 data-lang="fi">60% LTV Suositus</h3>
+                <p data-lang="en" class="active">
+                    <strong>€1,722,000</strong> loan amount at 5.0% indicative rate. 
+                    20-year amortization. Clean first-lien position.
+                </p>
+                <p data-lang="fi">
+                    <strong>1 722 000 €</strong> lainasumma 5,0 % indikatiivisella korolla. 
+                    20 vuoden takaisinmaksu. Puhdas ensimmäinen panttioikeus.
+                </p>
+            </div>
+            
+            <div class="card">
+                <div class="card-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                    </svg>
+                </div>
+                <h3 data-lang="en" class="active">Strong DSCR Profile</h3>
+                <h3 data-lang="fi">Vahva DSCR-profiili</h3>
+                <p data-lang="en" class="active">
+                    Year 1: <strong>1.77×</strong> (comfortable buffer)<br>
+                    Year 3: <strong>3.29×</strong> (excellent)<br>
+                    Minimum requirement: 1.20×–1.30×
+                </p>
+                <p data-lang="fi">
+                    Vuosi 1: <strong>1,77×</strong> (mukava puskuri)<br>
+                    Vuosi 3: <strong>3,29×</strong> (erinomainen)<br>
+                    Vähimmäisvaatimus: 1,20×–1,30×
+                </p>
+            </div>
+            
+            <div class="card">
+                <div class="card-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                </div>
+                <h3 data-lang="en" class="active">Zero Current Debt</h3>
+                <h3 data-lang="fi">Nolla Nykyistä Velkaa</h3>
+                <p data-lang="en" class="active">
+                    Property is 100% owned with no existing mortgages. 
+                    This provides maximum flexibility and security for the lender.
+                </p>
+                <p data-lang="fi">
+                    Kohde on 100 %:sti omistettu ilman olemassa olevia asuntolainoja. 
+                    Tämä tarjoaa maksimaalisen joustavuuden ja turvan lainanantajalle.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications -->
+    <section class="section" style="background: rgba(201,162,39,0.05);">
+        <div class="section-header">
+            <span class="section-tag" data-lang="en" class="active">Certifications</span>
+            <span class="section-tag" data-lang="fi">Sertifikaatit</span>
+            
+            <h2 data-lang="en" class="active">Credentials & Recognition</h2>
+            <h2 data-lang="fi">Valtuudet & Tunnustus</h2>
+        </div>
+        
+        <div class="cert-grid">
+            <div class="cert-badge">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/>
+                </svg>
+                <div class="cert-text">
+                    <div class="cert-title">NATO NCAGE</div>
+                    <div class="cert-desc" data-lang="en" class="active">Training & Recovery Facility</div>
+                    <div class="cert-desc" data-lang="fi">Koulutus- & Recovery-kohde</div>
+                </div>
+            </div>
+            
+            <div class="cert-badge">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                </svg>
+                <div class="cert-text">
+                    <div class="cert-title">Green Key 5-Star</div>
+                    <div class="cert-desc" data-lang="en" class="active">Highest Ecological Rating</div>
+                    <div class="cert-desc" data-lang="fi">Korkein Ekologinen Arvio</div>
+                </div>
+            </div>
+            
+            <div class="cert-badge">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-7 12h-2v-2h2v2zm0-4h-2V6h2v4z"/>
+                </svg>
+                <div class="cert-text">
+                    <div class="cert-title">Booking.com 9.2/10</div>
+                    <div class="cert-desc" data-lang="en" class="active">Top 5% Kuusamo Region</div>
+                    <div class="cert-desc" data-lang="fi">Top 5 % Kuusamon alue</div>
+                </div>
+            </div>
+            
+            <div class="cert-badge">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                </svg>
+                <div class="cert-text">
+                    <div class="cert-title">Visit Finland</div>
+                    <div class="cert-desc" data-lang="en" class="active">Sustainable Travel Listed</div>
+                    <div class="cert-desc" data-lang="fi">Kestävä Matkailu Listattu</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <h2 data-lang="en" class="active">Investment Opportunity</h2>
+        <h2 data-lang="fi">Sijoitusmahdollisuus</h2>
+        
+        <p data-lang="en" class="active">
+            A rare combination of institutional income, ecological leadership, and Arctic tourism growth. 
+            Available for OP Bank financing assessment.
+        </p>
+        <p data-lang="fi">
+            Harvinainen yhdistelmä institutionaalista tuloa, ekologista johtajuutta ja arktisen matkailun kasvua. 
+            Saatavilla OP-pankin rahoitusarviointiin.
+        </p>
+        
+        <a href="mailto:info@rinkgroup.fi" class="cta-button">
+            <span data-lang="en" class="active">Contact for Data Room</span>
+            <span data-lang="fi">Ota Yhteyttä Data Roomiin</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p data-lang="en" class="active">
+            <strong>Taigaschool Eco Apartments Oy</strong> (Y-tunnus: 3480347-7) | 
+            Ronkaisenrannantie 2-A, 93800 Kuusamo, Finland<br>
+            Prepared for: <strong>Newsec Finland Oy</strong> & <strong>OP Financial Group</strong> | 
+            Reference: TES-NEWSEC-2026-Q1 | February 2026
+        </p>
+        <p data-lang="fi">
+            <strong>Taigaschool Eco Apartments Oy</strong> (Y-tunnus: 3480347-7) | 
+            Ronkaisenrannantie 2-A, 93800 Kuusamo, Suomi<br>
+            Laadittu: <strong>Newsec Finland Oy</strong> & <strong>OP Rahoitusryhmä</strong> | 
+            Viite: TES-NEWSEC-2026-Q1 | Helmikuu 2026
+        </p>
+    </footer>
+
+    <script>
+        // Language Toggle
+        document.querySelectorAll('[data-set-lang]').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const lang = this.dataset.setLang;
+                
+                // Update buttons
+                document.querySelectorAll('[data-set-lang]').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                
+                // Update content
+                document.querySelectorAll('[data-lang]').forEach(el => {
+                    el.classList.remove('active');
+                    if (el.dataset.lang === lang) {
+                        el.classList.add('active');
+                    }
+                });
+                
+                // Update HTML lang attribute
+                document.documentElement.lang = lang;
+            });
+        });
+        
+        // Navigation scroll effect
+        const nav = document.querySelector('.nav');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+        
+        // Animate elements on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-in');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+        
+        document.querySelectorAll('.card, .metric-card, .cert-badge, .revenue-item').forEach(el => {
+            observer.observe(el);
+        });
+        
+        // Animate revenue bars
+        const revenueObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const bars = entry.target.querySelectorAll('.revenue-bar-fill');
+                    bars.forEach((bar, index) => {
+                        setTimeout(() => {
+                            bar.style.width = bar.style.width;
+                        }, index * 100);
+                    });
+                    revenueObserver.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+        
+        document.querySelectorAll('.revenue-bars').forEach(el => {
+            revenueObserver.observe(el);
+        });
+    </script>
+</body>
+</html>
