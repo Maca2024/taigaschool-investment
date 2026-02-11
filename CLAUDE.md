@@ -23,7 +23,7 @@ vercel --prod
 
 **Belangrijke URLs:**
 - Live site: https://taigaschool-investment.vercel.app
-- GitHub: [TOEVOEGEN NA PUSH]
+- GitHub: https://github.com/Maca2024/taigaschool-investment
 
 ---
 
